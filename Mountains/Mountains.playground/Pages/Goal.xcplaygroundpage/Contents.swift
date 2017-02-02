@@ -18,10 +18,36 @@ let canvas = Canvas(width: 300, height: 300)
 
 // Draw some lines
 canvas.defaultLineWidth = 1
-canvas.drawLine(fromX: 100, fromY: 0, toX: 100, toY: 50)
-canvas.drawLine(fromX: 150, fromY: 0, toX: 150, toY: 100)
-canvas.drawLine(fromX: 200, fromY: 0, toX: 200, toY: 50)
 
+for y in stride(from: 300, through: 0, by: -25) {
+    for x in stride(from: 0, through: 300, by: 25) {
+        canvas.drawEllipse(centreX: x, centreY: y, width: 1, height: 1)
+    }
+}
+/*
+ for x in stride(from: 0, through: 300, by: 25) {
+ canvas.drawEllipse(centreX: x, centreY: 300, width: 1, height: 1)
+ }
+ 
+ for x in stride(from: 0, through: 300, by: 25) {
+ canvas.drawEllipse(centreX: x, centreY: 275, width: 1, height: 1)
+ }
+ for x in stride(from: 0, through: 300, by: 25) {
+ canvas.drawEllipse(centreX: x, centreY: 250, width: 1, height: 1)
+ }
+ for x in stride(from: 0, through: 300, by: 25) {
+ canvas.drawEllipse(centreX: x, centreY: 225, width: 1, height: 1)
+ }
+ for x in stride(from: 0, through: 300, by: 25) {
+ canvas.drawEllipse(centreX: x, centreY: 200, width: 1, height: 1)
+ }
+ for x in stride(from: 0, through: 300, by: 25) {
+ canvas.drawEllipse(centreX: x, centreY: 175, width: 1, height: 1)
+ }
+ for x in stride(from: 0, through: 300, by: 25) {
+ canvas.drawEllipse(centreX: x, centreY: 150, width: 1, height: 1)
+ }
+ */
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
