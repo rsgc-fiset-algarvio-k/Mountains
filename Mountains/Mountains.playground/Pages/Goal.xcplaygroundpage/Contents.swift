@@ -20,7 +20,7 @@ let canvas = Canvas(width: 300, height: 300)
 canvas.defaultLineWidth = 1
 
 // Makes a grid of dots.
-for y in stride(from: 300, through: 0, by: -25) {
+for y in stride(from: 300, through: 150, by: -25) {
     for x in stride(from: 0, through: 300, by: 25) {
         canvas.drawEllipse(centreX: x, centreY: y, width: 1, height: 1)
     }
@@ -35,6 +35,11 @@ canvas.drawLine(fromX: 163, fromY: 163, toX: 238, toY: 88, lineWidth: 36)
 canvas.drawLine(fromX: 188, fromY: 188, toX: 288, toY: 88, lineWidth: 36)
 canvas.drawLine(fromX: 263, fromY: 163, toX: 338, toY: 88, lineWidth: 36)
 canvas.drawLine(fromX: 288, fromY: 188, toX: 388, toY: 88, lineWidth: 36)
+
+//Make the rectangle.
+/*
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 300, height: 125)
+ */
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
