@@ -27,11 +27,14 @@ for y in stride(from: 300, through: 0, by: -25) {
 }
 
 // Make the Mountains
-canvas.drawLine(fromX: 13, fromY: 188, toX: -13, toY: 163, lineWidth: 36)
-canvas.drawLine(fromX: 25, fromY: 163, toX: 0, toY: 138, lineWidth: 35)
-canvas.drawLine(fromX: 225, fromY: 175, toX: 125, toY: 75, lineWidth: 35)
-canvas.drawLine(fromX: 325, fromY: 175, toX: 225, toY: 75, lineWidth: 35)
-
+canvas.drawLine(fromX: -63, fromY: 188, toX: 38, toY: 88, lineWidth: 36)
+canvas.drawLine(fromX: -13, fromY: 188, toX: 88, toY: 88, lineWidth: 36)
+canvas.drawLine(fromX: 63, fromY: 163, toX: 138, toY: 88, lineWidth: 36)
+canvas.drawLine(fromX: 88, fromY: 188, toX: 188, toY: 88, lineWidth: 36)
+canvas.drawLine(fromX: 163, fromY: 163, toX: 238, toY: 88, lineWidth: 36)
+canvas.drawLine(fromX: 188, fromY: 188, toX: 288, toY: 88, lineWidth: 36)
+canvas.drawLine(fromX: 263, fromY: 163, toX: 338, toY: 88, lineWidth: 36)
+canvas.drawLine(fromX: 288, fromY: 188, toX: 388, toY: 88, lineWidth: 36)
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
