@@ -27,7 +27,7 @@ for y in stride(from: 300, through: 0, by: -25) {
 }
 
 // Make the Mountains
-canvas.drawLine(fromX: -63, fromY: 188, toX: 38, toY: 88, lineWidth: 36)
+canvas.drawLine(fromX: -38, fromY: 163, toX: 38, toY: 88, lineWidth: 36)
 canvas.drawLine(fromX: -13, fromY: 188, toX: 88, toY: 88, lineWidth: 36)
 canvas.drawLine(fromX: 63, fromY: 163, toX: 138, toY: 88, lineWidth: 36)
 canvas.drawLine(fromX: 88, fromY: 188, toX: 188, toY: 88, lineWidth: 36)
