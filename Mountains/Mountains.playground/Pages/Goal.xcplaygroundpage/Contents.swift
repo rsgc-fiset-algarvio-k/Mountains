@@ -30,8 +30,8 @@ for y in stride(from: 300, through: 150, by: -25) {
 canvas.fillColor = Color(hue: 50, saturation: 0, brightness: 50, alpha: 100)
 canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 300, height: 125)
 
-// Make the Mountains
-canvas.fillColor = Color(hue: 50, saturation: 0, brightness: 75, alpha: 100)
+//Make the Mountains
+canvas.lineColor = Color(hue: 50, saturation: 0, brightness: 75, alpha: 100)
 canvas.drawLine(fromX: -38, fromY: 163, toX: 38, toY: 88, lineWidth: 36)
 canvas.drawLine(fromX: -13, fromY: 188, toX: 88, toY: 88, lineWidth: 36)
 canvas.drawLine(fromX: 63, fromY: 163, toX: 138, toY: 88, lineWidth: 36)
